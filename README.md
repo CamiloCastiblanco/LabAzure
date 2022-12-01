@@ -88,5 +88,66 @@
 
 ![Image text](https://github.com/CamiloCastiblanco/LabAzure/blob/main/imgAzure/ConfigQA2.png)
 
+- Vamos a la security de los queries 
+
+![Image text](https://github.com/CamiloCastiblanco/LabAzure/blob/main/imgAzure/SecurityQueries.png)
+
+- Le damos permiso de lectura al proyecto
+
+![Image text](https://github.com/CamiloCastiblanco/LabAzure/blob/main/imgAzure/ReadPerm.png)
+
+- Cambiamos el nombre de la copia de QA al de Prod
+
+![Image text](https://github.com/CamiloCastiblanco/LabAzure/blob/main/imgAzure/QAtoProd.png)
+
+- Habilitamos la pre aprobación para el despliegue y la configuramos
+
+![Image text](https://github.com/CamiloCastiblanco/LabAzure/blob/main/imgAzure/PreDeploy.png)
+
+- Vamos a la configuración del stage de Prod y le damos un nuevo App service
+
+![Image text](https://github.com/CamiloCastiblanco/LabAzure/blob/main/imgAzure/ConfigProd.png)
+
+- Nuevamente vamos al Layout para cambiar su version a 3.0
+
+![Image text](}https://github.com/CamiloCastiblanco/LabAzure/blob/main/imgAzure/Layout3.0.png)
+
+- Se obtuvo un error en QA, por lo que nuevamente debemos ir a los Queries y encontrar el bug que se llama Decline in orders noticed
+
+![Image text](https://github.com/CamiloCastiblanco/LabAzure/blob/main/imgAzure/DeclineInOrders.png)
+
+- Cambiamos el estado del bug para solucionarlo
+
+![Image text](https://github.com/CamiloCastiblanco/LabAzure/blob/main/imgAzure/bugDone.png)
+
+- Esperamos a que nuevamente corra el pipeline y le damos permisos a prod para que pueda desplegarse, sin embargo, no me deja ya que yo mismo lo solicité
+
+![Image text](https://github.com/CamiloCastiblanco/LabAzure/blob/main/imgAzure/AprobacionDeploy.png)
+
+### Task 6:
+
+- Vamos a los deployments slots del  service de produccion en el portal azure
+
+- Agregamos un slot nuevo y lo configuramos
+
+![Image text](https://github.com/CamiloCastiblanco/LabAzure/blob/main/imgAzure/newSlot.png)
+
+- Vamos nuevamente al azure devops y entramos al stage de prod para seleccionar la app de deploy de azure y lo configuramos
+
+![Image text](https://github.com/CamiloCastiblanco/LabAzure/blob/main/imgAzure/NewServiceName.png)
+
+ - Nuevamente vamos al Layout y dejamos la versión en 4.0
+
+![Image text](https://github.com/CamiloCastiblanco/LabAzure/blob/main/imgAzure/Layout4.0.png)
+
+- Nuevamente no me deja aprobar la solicitud de despliegue por yo haber creado el release, sin embargo, fui al portal azure y le hice swap a los slots como paso final 
+
+![Image text](https://github.com/CamiloCastiblanco/LabAzure/blob/main/imgAzure/Swap.png)
+
+
+
+
+
+
 
 
